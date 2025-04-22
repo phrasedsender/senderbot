@@ -3,13 +3,13 @@ import os
 from telethon import TelegramClient
 from telethon.errors import SessionPasswordNeededError
 
-api_id = 20902196
-api_hash = '668beb13cf07a998cd1237641ff3c4f3'
+api_id = 14174863
+api_hash = 'c4d92e3650f90387abb28e4ef3ef4817'
 
 accounts_info = [
-    {'session': 'accounts/account1', 'phone': '+447424829548'},
-    {'session': 'accounts/account2', 'phone': '+447349869901'},
-    {'session': 'accounts/account3', 'phone': '+447405283730'},
+    {'session': 'accounts/account1', 'phone': '+447932451150'},
+    {'session': 'accounts/account2', 'phone': '+447398724192'},
+    {'session': 'accounts/account3', 'phone': '+447572386363'},
 ]
 
 async def login_all_accounts():
@@ -49,6 +49,7 @@ async def process_account(session_name):
             try:
                 await message.forward_to(dialog.entity)
                 print(f"[{session_name}] ✔️ Sent to: {dialog.name}")
+                await asyncio.sleep(2)  # ⏱️ Delay added here
             except Exception as e:
                 print(f"[{session_name}] ❌ Error in {dialog.name}: {e}")
 
