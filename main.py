@@ -7,9 +7,9 @@ api_id = 14174863
 api_hash = 'c4d92e3650f90387abb28e4ef3ef4817'
 
 accounts_info = [
-    {'session': 'accounts/account1', 'phone': '+447932451150'},
-    {'session': 'accounts/account2', 'phone': '+447398724192'},
-    {'session': 'accounts/account3', 'phone': '+447572386363'},
+    {'session': 'accounts/account1', 'phone': '+447349045271'},
+    {'session': 'accounts/account2', 'phone': '+447349401850'},
+    {'session': 'accounts/account3', 'phone': '+447301381147'},
 ]
 
 async def login_all_accounts():
