@@ -3,13 +3,13 @@ import os
 from telethon import TelegramClient
 from telethon.errors import SessionPasswordNeededError
 
-api_id = 14174863
-api_hash = 'c4d92e3650f90387abb28e4ef3ef4817'
+api_id = 20401643
+api_hash = '70526befa15fb3132d3f43233955250f'
 
 accounts_info = [
-    {'session': 'accounts/account1', 'phone': '+447349045271'},
-    {'session': 'accounts/account2', 'phone': '+447349401850'},
-    {'session': 'accounts/account3', 'phone': '+447301381147'},
+    {'session': 'accounts/account1', 'phone': '+447535871120'},
+    {'session': 'accounts/account2', 'phone': '+447904491238'},
+    {'session': 'accounts/account3', 'phone': '+447507568496'},
 ]
 
 async def login_all_accounts():
@@ -68,9 +68,9 @@ async def main():
                 await process_account(acc['session'])
             except Exception as e:
                 print(f"[{acc['session']}] ⚠️ Error: {e}")
-        print(f"\n✅ Cycle #{cycle} complete. ⏳ Sleeping 1 hour + 1 minute...\n")
+        print(f"\n✅ Cycle #{cycle} complete. ⏳ Sleeping 2 hours...\n")
         cycle += 1
-        await asyncio.sleep(3660)
+        await asyncio.sleep(7200)
 
 if __name__ == '__main__':
     asyncio.run(main())
